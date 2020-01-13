@@ -45,8 +45,8 @@ Getting the west pre-release
 You currently need a pre-release version of west to use this feature.
 Install it with pip3::
 
-  pip3 install --user west==0.6.99.dev3   # Linux
-  pip3 install west==0.6.99.dev3          # macOS, Windows
+  pip3 install --user -U --pre west       # Linux
+  pip3 install -U --pre west              # macOS, Windows
 
 **You can always go back to the latest stable release** after you're done.
 For example, to go back to 0.6.3::
