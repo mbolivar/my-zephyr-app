@@ -99,11 +99,17 @@ There are several additional examples along with complete documentation on how
 the new feature currently works.
 
 Your feedback is requested! Please let us know if you like it, or if there's
-something missing or not quite right. Feel free to comment directly in `pull
-request 20433`_ or send email to the Zephyr lists.
+something missing or not quite right.
+
+Feel free to comment directly in the pull request, write email to the Zephyr
+lists, or use the ``#west`` channel in Zephyr's Slack workspace. (See `this
+page`_ for details on email and slack.)
 
 .. _pull request 20433:
    https://github.com/zephyrproject-rtos/zephyr/pull/20433
 
 .. _west issue 221:
    https://github.com/zephyrproject-rtos/west/issues/221
+
+.. _this page:
+   https://docs.zephyrproject.org/latest/guides/getting-help.html
