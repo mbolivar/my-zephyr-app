@@ -1,22 +1,25 @@
-West Manifest Import Example
+West manifest import example
 ############################
 
-Overview
-********
+Manifest imports are an in-development `west`_ feature its developers would like
+feedback on.
 
-Manifest imports are an in-development west feature which will be released in
-version 0.7. You can follow this README to try it out. Please send feedback if you
-have any!
+.. _west: https://github.com/zephyrproject-rtos/west
 
-This feature lets you import another west manifest file (like
-`zephyr/west.yml`_) into your own west.yml file, and get all the imported
-Zephyr modules "for free", without having to copy/paste them into your file and
-track changes yourself.
+This file explains how you can try it out and let us know what you think.
+
+What are manifest imports?
+**************************
+
+A west feature which lets you import someone else's manifest file (like
+`zephyr/west.yml`_) into your own ``west.yml``, and get all the imported
+projects "for free", without having to copy/paste them into your file and track
+changes yourself.
 
 .. _zephyr/west.yml:
    https://github.com/zephyrproject-rtos/zephyr/blob/master/west.yml
 
-This repository contains a simple example `west.yml`_ doing just that:
+This repository's example `west.yml`_ uses manifest imports:
 
 .. code-block:: yaml
 
@@ -28,7 +31,7 @@ This repository contains a simple example `west.yml`_ doing just that:
        - name: zephyr
          remote: zephyrproject-rtos
          revision: v2.1.0
-         import: true
+         import: true # <------------- import zephyr/west.yml from v2.1.0
 
      self:
        path: my-zephyr-app
@@ -36,8 +39,9 @@ This repository contains a simple example `west.yml`_ doing just that:
 .. _west.yml:
    https://github.com/mbolivar/my-zephyr-app/blob/master/west.yml
 
-It also contains a Hello World application, so you can see how this feature
-lets you combine your own Zephyr application with Zephyr itself.
+It also contains a Hello World Zephyr application which works with Zephyr 2.1.
+This shows how manifest imports make it easier to maintain your Zephyr
+applications with west.
 
 Getting the west pre-release
 ****************************
@@ -82,8 +86,8 @@ If you connect to the board's console, you'll see a hello world message:
 
     Hello World from my-zephyr-app!
 
-More Examples
-*************
+Let us know what you think!
+***************************
 
 We're documenting this feature in Zephyr `pull request 20433`_.
 
