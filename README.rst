@@ -43,6 +43,18 @@ It also contains a Hello World Zephyr application which works with Zephyr 2.1.
 This shows how manifest imports make it easier to maintain your Zephyr
 applications with west.
 
+Documentation
+*************
+
+We're documenting this feature in Zephyr `pull request 20433`_.
+
+You can read the rendered HTML documentation here:
+
+https://builds.zephyrproject.org/zephyrproject-rtos/zephyr/20433/docs/guides/west/manifest.html#manifest-imports
+
+There are several additional examples along with complete documentation on how
+the new feature currently works.
+
 Getting the west pre-release
 ****************************
 
@@ -82,18 +94,6 @@ If you connect to the board's console, you'll see a hello world message:
 .. code-block:: console
 
     Hello World from my-zephyr-app!
-
-More examples
-*************
-
-We're documenting this feature in Zephyr `pull request 20433`_.
-
-You can read the rendered HTML documentation here:
-
-https://builds.zephyrproject.org/zephyrproject-rtos/zephyr/20433/docs/guides/west/manifest.html#manifest-imports
-
-There are several additional examples along with complete documentation on how
-the new feature currently works.
 
 Let us know what you think!
 ***************************
