@@ -77,17 +77,14 @@ Example build and flash for ``reel_board`` (run this from the
   west build -b reel_board my-zephyr-app
   west flash
 
-Sample Output
-*************
-
 If you connect to the board's console, you'll see a hello world message:
 
 .. code-block:: console
 
     Hello World from my-zephyr-app!
 
-Let us know what you think!
-***************************
+More examples
+*************
 
 We're documenting this feature in Zephyr `pull request 20433`_.
 
@@ -97,6 +94,9 @@ https://builds.zephyrproject.org/zephyrproject-rtos/zephyr/20433/docs/guides/wes
 
 There are several additional examples along with complete documentation on how
 the new feature currently works.
+
+Let us know what you think!
+***************************
 
 Your feedback is requested! Please let us know if you like it, or if there's
 something missing or not quite right.
